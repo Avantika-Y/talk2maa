@@ -37,9 +37,9 @@ document.getElementById('form').addEventListener('submit', (e) => {
     e.preventDefault();
     var userInfo = datab.push();
     userInfo.set({
-        name: getId('fname'),
-        email : getId('eemail'),
-        password : getId('lpassword')
+        name: getElementById('fname'),
+        email : getElementById('eemail'),
+        password : getElementById('lpassword')
     });
     alert("Successfully Signed Up");
     console.log("sent");
