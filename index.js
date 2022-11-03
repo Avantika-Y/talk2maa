@@ -18,6 +18,11 @@ document.getElementById ("btn").addEventListener ("click", signIn, false);
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
+firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
+        location.replace("home.html")
+    }
+})
 
 function signIn(){
     var email = document.getElementById('eemail').value;
