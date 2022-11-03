@@ -139,6 +139,7 @@ h2{
     color: #F96D80;
     cursor: pointer;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 .blog-col .blog1:hover{
