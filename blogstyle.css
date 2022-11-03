@@ -1,4 +1,64 @@
-body { 
+*{
+    margin: 0;
+    padding: 0;
+}
+.containernav{
+    height: 18vh;
+    width: 100%;
+    background-image: url(finalbg.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15hv;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: -70px;
+    margin-right: 10px;
+}
+.cart{
+    width: 40px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    margin-top: 2px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ff77cd;
+}
+.navbar ul li::after{
+    content:'';
+    width: 0%;
+    height:3px;
+    display: block;
+    background: #87adfe;
+    
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}body { 
     background-color: #fff3ff;
 }
 .blog{
@@ -70,148 +130,564 @@ h2{
 }
 .pictureone img {
     float: center;
-    justify-content: center;
-    align-content: center;
+    padding-left: 40%;
 }
-.picture1 {
-    justify-content: center;
-    padding: 100%;
+.picturetwo img {
+    float: center;
+    padding-left: 40%;
+}
+.picturethree img {
+    float: center;
+    padding-left: 40%;
+}
+.picturefour img {
+    float: center;
+    padding-left: 40%;
+}
+.picturefive img {
+    float: center;
+    padding-left: 40%;
+}.picturesix img {
+    float: center;
+    padding-left: 40%;
+}
+.pictureseven img {
+    float: center;
+    padding-left: 40%;
 }
 .picture2 img {
     float: center;
+    padding-left: 30%;
 }
 .picture3 img {
     float: center;
+    padding-left: 5%;
 }
 .picture4 img {
     float: center;
     width: 480px;
-    height: none;
+    height: 360px;
+    padding-left: 35%;
 }
 .picture5  img{
     float: center;
+    width: 480px;
+    padding-left: 35%;
 }
 .picture6  img{
     float: center;
     height: 280px;
     width: none;
+    padding-left: 40%;
 }
 .picture7  img{
     float: center;
     height: 280px;
     width: none;
+    padding-left: 40%;
 }
 .picture8 img{
-    float: center;    
+    float: center;
+    padding-left: 25%;    
 }
 .picture9 img{
-    float: center;    
+    float: center;
+    padding-left: 5%;    
 }
 .picture10 img{
-    float: center;    
+    float: center; 
+    padding-left: 25%;   
 }
 .picture11 img{
     float: center; 
     width: 480px;
-    height: 300px;   
+    height: 300px;  
+    padding-left: 30%; 
 }
 .picture12 img{
     float: center; 
     width: 480px;
     height: 300px; 
+    padding-left: 30%;
 }
 .picture13 img{
-    float: center;    
+    float: center; 
+    padding-left: 5%;   
 }
 .picture14 img{
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture15 img{
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture16 img{
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture17 img{
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture18 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture19 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture20 img {
     float: center;
+    padding-left: 5%;
 }
 .picture21 img {
     float: center;
+    padding-left: 15%;
 }
 picture22 img {
     float: center;
-    height: 2%;
-    width: 2%;
+    height: 10px;
+    width: 10px;
+    padding-left: 5%;
 }
 .picture23 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left:40%;
 }
 .picture24 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture25 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture26 img {
     float: center;
+    padding-left: 5%;
 }
 .picture27 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture28 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture29 img {
     float: center;
+    padding-left: 5%;
 }
 .picture30 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture31 img {
     float: center;
     height: 280px;
     width: 280px;
+    padding-left: 40%;
 }
 .picture32 img {
     float: center;
+    padding-left: 5%;
 }
 .picture33 img {
     float: center;
+    padding-left: 40%;
+}
+.picture34 img {
+    float: center;
+    padding-left: 40%;
+}
+.picture35 img {
+    float: center;
+    height:25opx;
+    width:245px;
+    padding-left: 40%;
+}
+.picture36 img {
+    float: center;
+    padding-left: 40%;
+}
+.picture37 img{
+   float:center;
+   height:25opx;
+    width:245px;
+    padding-left: 40%;
+}
+.picture38 img{
+    float:center;
+    height:25opx;
+     width:245px;
+     padding-left: 40%;
+ }
+ .picture39 img{
+    float:center;
+    height:25opx;
+     width:245px;
+     padding-left: 40%;
+ }
+ .picture40 img {
+    float: center;
+    padding-left: 5%;
+}
+.picture41 img{
+    float:center;
+    height:25opx;
+     width:245px;
+     padding-left: 40%;
+ }
+ .picture42 img {
+    float: center;
+    padding-left: 35%;
+}
+.picture43 img{
+    float:center;
+    height:25opx;
+     width:245px;
+     padding-left: 40%;
+ }
+ .picture44 img{
+    float:center;
+    height:25opx;
+     width:245px;
+     padding-left: 40%;
+ }
+ .picture45 img {
+    float: center;
+    padding-left: 5%;
+}
+.picture48 img{
+    float:center;
+    height:25opx;
+     width:245px;
+     padding-left: 40%;
+}
+.picture47 img{
+ float:center;
+ height:25opx;
+ width:245px;
+padding-left: 40%;
+}
+ .picture46 img {
+    float: center;
+    padding-left: 5%;
+}
+.picture49 img {
+    float: center;
+    padding-left: 40%;
+}
+.picture50 img {
+    float: center;
+    padding-left: 5%;
+}
+.picture51 img {
+    float: center;
+    padding-left: 40%;
 }
 
+.picture52 img {
+    float: center;
+    padding-left: 5%;
+}
+.picture53 img {
+    float: center;
+    padding-left: 35%;
+    height:250px;
+    width: none;
+}
+.picture54 img {
+    float: center;
+    padding-left: 35%;
+    height:250px;
+    width: none;
+}
+.picture55 img {
+    float: center;
+    padding-left: 40%;
+    height:200px;
+    width: 200px;
+}
+.picture56 img {
+    float: center;
+    padding-left: 5%;
+}
+.picture57 img {
+    float: center;
+    padding-left: 40%;
+    height:200px;
+    width: 200px;
+}
+.picture58 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture59 img{
+    float:center;
+    padding-left: 35%;
+}
+.picture60 img {
+    float: center;
+    padding-left: 40%;
+    height: 200px;
+    width: 200px;
+}
+.picture61 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture62 img {
+    float: center;
+    padding-left: 40%;
+    height:250px;
+    width: 250px;
+}
+.picture63 img {
+    float: center;
+    padding-left: 40%;
+    height:400px;
+    width: 250px;
+}
+.picture64 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture65 img {
+    float: center;
+    width: 480px;
+    height: 360px;
+    padding-left: 35%;
+}
+.picture66 img {
+    float: center;
+    width: 480px;
+    height: 360px;
+    padding-left: 35%;
+}
+.picture67 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture68 img {
+    float: center;
+    width: 480px;
+    height: 360px;
+    padding-left: 35%;
+}
+.picture69 img {
+    float: center;
+    width: 480px;
+    height: 360px;
+    padding-left: 35%;
+}
+.picture70 img {
+    float: center;
+    width: 480px;
+    height: 360px;
+    padding-left: 35%;
+}
+.picture71 img {
+    float: center;
+    width: 280px;
+    height: 260px;
+    padding-left: 35%;
+}
+.picture72 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture73 img{
+    float:center;
+    padding-left: 35%;
+}
+.picture74 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture75 img{
+    float:center;
+    padding-left: 40%;
+}
+.picture76 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture77 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture78 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture79 img{
+    float: center; 
+    width: 480px;
+    height: 300px;  
+    padding-left: 30%; 
+}
+.picture80 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture81 img{
+    float:center;
+    padding-left: 40%;
+}
+.picture82 img{
+    float:center;
+    padding-left: 40%;
+}
+.picture83 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture84 img{
+    float: center; 
+    width: 480px;
+    height: 300px;  
+    padding-left: 30%; 
+}
+.picture85 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture86 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture87 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture88 img{
+    float:center;
+    padding-left: 40%;
+}
+.picture89 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture90 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture91 img{
+    float: center;
+    height:300px;
+    width:250px;
+    padding-left: 40%;
+}
+.picture92 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture93 img{
+    float:center;
+    height:190px;
+    width:190px;
+    padding-left: 40%;
+}
+.picture94 img{
+    float:center;
+    padding-left: 35%;
+    height:300px;
+}
+.picture95 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture96 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture97 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture98 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture99 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture100 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture101 img{
+    float:center;
+    padding-left: 40%;
+}
+.picture102 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture103 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture104 img{
+    float:center;
+    padding-left: 5%;
+}
+.picture105 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture106 img{
+    float:center;
+    height:290px;
+    width:300px;
+    padding-left: 40%;
+}
+.picture107 img{
+    float:center;
+    padding-left: 5%;
+}
 
 
 
