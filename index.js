@@ -23,16 +23,16 @@ firebase.auth().onAuthStateChanged((user)=>{
         location.replace("home.html")
     }
 })
-
 function signIn(){
     var email = document.getElementById('eemail').value;
     var password = document.getElementById('lpassword').value;
     console.log(email,password)
     const promise =signInWithEmailAndPassword(auth,email,password);
     promise.catch(e => {alert(e)});
-    promise.then( e => alert("login successfully"));
+    promise.then( e => alert("Logged In successfully"));
     // window.open("https://www.google.com","_self");
 }
+
 document.getElementById('form').addEventListener('submit', (e) => {
     e.preventDefault();
     var userInfo = datab.push();
