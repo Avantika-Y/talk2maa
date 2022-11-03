@@ -37,9 +37,14 @@ function signUp(){
 var name=document.getElementById('fname').value;
     var email=document.getElementById('eemail').value;
     var password=document.getElementById('lpassword').value;
-     const promise =createUserWithEmailAndPassword(auth,email,password);
-    promise.catch(e => {alert(e)});
-    promise.then( e => alert("signed Up successfully"));
+    firebase.auth().createUserWithEmailAndPassword(auth,email,password)
+    .then((userCredential)=>{
+    var user=userCredential.user:
+    });
+    .catch((error) => {
+       var errorCode = error.code;
+    var errorMessage = error.message;
+    });
     
 }
 
