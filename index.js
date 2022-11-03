@@ -37,7 +37,7 @@ function signUp(){
 var name=document.getElementById('fname').value;
     var email=document.getElementById('eemail').value;
     var password=document.getElementById('lpassword').value;
-     const promise =createUserWithEmailAndPassword(email,password);
+     const promise =createUserWithEmailAndPassword(auth,email,password);
     promise.catch(e => {alert(e)});
     promise.then( e => alert("signed Up successfully"));
     
