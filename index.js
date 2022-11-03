@@ -15,6 +15,7 @@ const firebaseConfig = {
 
 document.getElementById ("btn").addEventListener ("click", signIn, false);
 
+document.getElementById ("btn2").addEventListener ("click", signUp, false);
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
@@ -31,6 +32,15 @@ function signIn(){
     promise.catch(e => {alert(e)});
     promise.then( e => alert("Logged In successfully"));
     // window.open("https://www.google.com","_self");
+}
+function signUp(){
+var name=document.getElementById('fname').value;
+    var email=document.getElementById('eemail').value;
+    var password=document.getElementById('lpassword').value;
+     const promise =createUserWithEmailAndPassword(email,password);
+    promise.catch(e => {alert(e)});
+    promise.then( e => alert("signed Up successfully"));
+    
 }
 
 document.getElementById('form').addEventListener('submit', (e) => {
